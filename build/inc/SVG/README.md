@@ -51,7 +51,7 @@ $arguments = array(
 	),
 );
 
-return wp_lhpbp()->get_svg( 'img/icons/slashes.svg', $arguments );
+return wp_wpmschema()->get_svg( 'img/icons/slashes.svg', $arguments );
 ```
 ### Returns
 ```

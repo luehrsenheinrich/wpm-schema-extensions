@@ -2,7 +2,7 @@
 /**
  * Test file.
  *
- * @package lhpbp
+ * @package wpmschema
  */
 
-namespace WpMunich\lhpbp;
+namespace WpMunich\wpmschema;

@@ -1,5 +1,5 @@
 {
-	"name": "luehrsenheinrich/lhpbp",
+	"name": "luehrsenheinrich/wpmschema",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
 	"require-dev": {

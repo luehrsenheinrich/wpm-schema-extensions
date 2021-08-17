@@ -2,10 +2,10 @@
 /**
  * The class that holds one svg image.
  *
- * @package lhpbp/SVG
+ * @package wpmschema/SVG
  */
 
-namespace WpMunich\lhpbp\SVG;
+namespace WpMunich\wpmschema\SVG;
 use \DOMDocument;
 
 defined( 'ABSPATH' ) || exit;

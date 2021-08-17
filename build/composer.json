@@ -1,12 +1,9 @@
 {
-  "name": "wpmunich/lhbpp",
+  "name": "wpmunich/wpmschema",
   "type": "wordpress-plugin",
-  "require": {
-    "cjstroud/classnames-php": "^1.0"
-  },
   "autoload": {
     "psr-4": {
-      "WpMunich\\lhpbp\\": "inc/"
+      "WpMunich\\wpmschema\\": "inc/"
     }
   }
 }

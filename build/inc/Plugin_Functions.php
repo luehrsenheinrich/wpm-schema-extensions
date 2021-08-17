@@ -2,10 +2,10 @@
 /**
  * _Lhpbp\Plugin_Functions class
  *
- * @package lhpbp
+ * @package wpmschema
  */
 
-namespace WpMunich\lhpbp;
+namespace WpMunich\wpmschema;
 use InvalidArgumentException;
 use BadMethodCallException;
 use RuntimeException;
@@ -15,8 +15,8 @@ use RuntimeException;
  *
  * This class provides access to all available plugin functions methods.
  *
- * Its instance can be accessed through `wp_lhpbp()`. For example, if there is a plugin function called `posted_on`, it can
- * be accessed via `wp_lhpbp()->posted_on()`.
+ * Its instance can be accessed through `wp_wpmschema()`. For example, if there is a plugin function called `posted_on`, it can
+ * be accessed via `wp_wpmschema()->posted_on()`.
  */
 class Plugin_Functions {
 	/**
@@ -47,7 +47,7 @@ class Plugin_Functions {
 				throw new InvalidArgumentException(
 					sprintf(
 						/* translators: 1: classname/type of the variable, 2: interface name */
-						__( 'The plugin functions component %1$s does not implement the %2$s interface.', 'lhpbp' ),
+						__( 'The plugin functions component %1$s does not implement the %2$s interface.', 'wpm-schema' ),
 						gettype( $component ),
 						Plugin_Function_Interface::class
 					)
@@ -73,8 +73,8 @@ class Plugin_Functions {
 			throw new BadMethodCallException(
 				sprintf(
 					/* translators: %s: template tag name */
-					__( 'The plugin function %s does not exist.', 'lhpbp' ),
-					'wp_lhpbp()->' . $method . '()'
+					__( 'The plugin function %s does not exist.', 'wpm-schema' ),
+					'wp_wpmschema()->' . $method . '()'
 				)
 			);
 		}
@@ -99,7 +99,7 @@ class Plugin_Functions {
 				throw new InvalidArgumentException(
 					sprintf(
 						/* translators: 1: template tag method name, 2: component class name */
-						__( 'The plugin function method %1$s registered by plugin component %2$s must either be a callable or an array.', 'lhpbp' ),
+						__( 'The plugin function method %1$s registered by plugin component %2$s must either be a callable or an array.', 'wpm-schema' ),
 						$method_name,
 						get_class( $component )
 					)
@@ -109,7 +109,7 @@ class Plugin_Functions {
 				throw new RuntimeException(
 					sprintf(
 						/* translators: 1: template tag method name, 2: component class name */
-						__( 'The plugin function method %1$s registered by plugin component %2$s conflicts with an already registered plugin function of the same name.', 'lhpbp' ),
+						__( 'The plugin function method %1$s registered by plugin component %2$s conflicts with an already registered plugin function of the same name.', 'wpm-schema' ),
 						$method_name,
 						get_class( $component )
 					)

@@ -2,12 +2,12 @@
 /**
  * Gbplugin\SVG\Component class
  *
- * @package lhpbp
+ * @package wpmschema
  */
 
-namespace WpMunich\lhpbp\SVG;
-use WpMunich\lhpbp\Component_Interface;
-use WpMunich\lhpbp\Plugin_Function_Interface;
+namespace WpMunich\wpmschema\SVG;
+use WpMunich\wpmschema\Component_Interface;
+use WpMunich\wpmschema\Plugin_Function_Interface;
 use function add_action;
 use \WP_Error;
 
@@ -33,7 +33,7 @@ class Component implements Component_Interface, Plugin_Function_Interface {
 	}
 
 	/**
-	 * Gets template tags to expose as methods on the Template_Tags class instance, accessible through `wp_lhpbp()`.
+	 * Gets template tags to expose as methods on the Template_Tags class instance, accessible through `wp_wpmschema()`.
 	 *
 	 * @return array Associative array of $method_name => $callback_info pairs. Each $callback_info must either be
 	 *               a callable or an array with key 'callable'. This approach is used to reserve the possibility of
@@ -66,8 +66,8 @@ class Component implements Component_Interface, Plugin_Function_Interface {
 			case ( file_exists( get_template_directory() . $path ) ):
 				$final_path = get_template_directory() . $path;
 				break;
-			case ( file_exists( _LHPBP_PATH . $path ) ):
-				$final_path = _LHPBP_PATH . $path;
+			case ( file_exists( WPM_SCHEMA_PATH . $path ) ):
+				$final_path = WPM_SCHEMA_PATH . $path;
 				break;
 			default:
 				return false;

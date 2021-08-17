@@ -3,6 +3,7 @@
 		"https://downloads.wordpress.org/plugin/wordpress-importer.zip",
 		"https://downloads.wordpress.org/plugin/query-monitor.zip",
 		"https://downloads.wordpress.org/plugin/debug-bar.zip",
+		"https://downloads.wordpress.org/plugin/wordpress-seo.16.9.zip",
 		"./trunk"
 	],
 	"mappings": {
@@ -14,7 +15,7 @@
 			"config": {
 				"WP_DEBUG": true,
 				"WP_ENVIRONMENT_TYPE": "development",
-				"LH_CURRENTLY_EDITING": "lhpbp"
+				"LH_CURRENTLY_EDITING": "wpm-schema"
 			}
 		}
 	}

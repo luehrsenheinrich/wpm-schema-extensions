@@ -2,10 +2,10 @@
 /**
  * _Lhpbp\Component_Interface interface
  *
- * @package lhpbp
+ * @package wpmschema
  */
 
-namespace WpMunich\lhpbp;
+namespace WpMunich\wpmschema;
 
 /**
  * Interface for a plugin component.

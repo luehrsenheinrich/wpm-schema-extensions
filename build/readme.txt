@@ -1,5 +1,5 @@
 === <%= pkg.title %> ===
-Contributors: wpmunich
+Contributors: wpmunich,luehrsen
 Tags: plugin,boilerplate
 Requires at least: <%= pkg.minWpReq %>
 Tested up to: <%= pkg.testedWp %>

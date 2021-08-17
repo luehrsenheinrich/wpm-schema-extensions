@@ -1,11 +1,11 @@
 <?php
 /**
- * The `wp_lhpbp()` function.
+ * The `wp_wpmschema()` function.
  *
- * @package lhpbp
+ * @package wpmschema
  */
 
-namespace WpMunich\lhpbp;
+namespace WpMunich\wpmschema;
 
 /**
  * Provides access to all available functions of the plugin.
@@ -14,7 +14,7 @@ namespace WpMunich\lhpbp;
  *
  * @return Plugin_Functions Plugin functions instance exposing plugin function methods.
  */
-function wp_lhpbp() {
+function wp_wpmschema() {
 	static $plugin = null;
 
 	if ( null === $plugin ) {
