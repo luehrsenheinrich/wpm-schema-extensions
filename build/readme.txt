@@ -39,6 +39,9 @@ You can select another WordPress user in a user profile that is then marked as a
 = Why does this plugin exist? =
 I wrote this plugin, because I wanted to tell Google who my wife is. The 'spouse' markup was the first extension and with that came the thought, that other useful extensions might be available.
 
+= Will this plugin work without Yoast SEO? =
+No. This plugin builds on the amazing code developed by the Yoast Team and is a deliberate extension to their efforts.
+
 == Changelog ==
 = 1.0.0 =
 * Initial release
