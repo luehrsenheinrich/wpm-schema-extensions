@@ -133,6 +133,7 @@ class Plugin {
 			new SVG\Component(),
 			new UserSettings\Component(),
 			new Schema_Spouse\Component(),
+			new Schema_Honorific\Component(),
 		);
 
 		return $components;

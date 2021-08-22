@@ -43,7 +43,7 @@ class Component implements Component_Interface {
 	public function extend_user_profile( $user ) {
 		?>
 		<tr class="user-description-wrap">
-			<th><label for="description"><?php _e( 'Spouse', 'wpm-schema' ); ?></label></th>
+			<th><label for="wpm-spouse"><?php _e( 'Spouse', 'wpm-schema' ); ?></label></th>
 			<td>
 				<?php
 					wp_dropdown_users(
@@ -56,7 +56,7 @@ class Component implements Component_Interface {
 						)
 					);
 				?>
-				<p class="description"><?php _e( 'Select the WordPress User, that shall be displayed as your spouse in the Yoast SEO Schema graph.' ); ?></p>
+				<p class="description"><?php _e( 'Select the WordPress User, that shall be displayed as your spouse in the Yoast SEO Schema graph.', 'wpm-schema' ); ?></p>
 			</td>
 		</tr>
 		<?php
