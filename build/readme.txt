@@ -22,6 +22,12 @@ This is why this plugin exists. In this plugin we can add fun, useful and experi
 ### Spouse
 You can select another WordPress user in a user profile that is then marked as a [spouse](https://schema.org/spouse) of that user. Be advised, this connection is not bidirectional.
 
+## Make this better
+
+If you are a developer, we encourage you to follow along or [contribute](https://github.com/luehrsenheinrich/wpm-schema-extensions) to the development of this plugin [on GitHub](https://github.com/luehrsenheinrich/wpm-schema-extensions).
+
+If you have any ideas for Schema.org extensions you want to see in this plugin, don't hesitate and contact us. [Twitter](https://twitter.com/lh_agentur), [Github](https://github.com/luehrsenheinrich/wpm-schema-extensions), the WordPress.org Support Forums, just write your idea down! Your input is very appreciated.
+
 == Installation ==
 = From within WordPress =
 
