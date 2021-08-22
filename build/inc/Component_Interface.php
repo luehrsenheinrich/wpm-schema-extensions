@@ -1,6 +1,6 @@
 <?php
 /**
- * _Lhpbp\Component_Interface interface
+ * WpmSchema\Component_Interface interface
  *
  * @package wpmschema
  */

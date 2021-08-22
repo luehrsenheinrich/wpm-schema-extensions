@@ -1,6 +1,6 @@
 <?php
 /**
- * _Lhpbp\Plugin_Functions class
+ * WpmSchema\Plugin_Functions class
  *
  * @package wpmschema
  */

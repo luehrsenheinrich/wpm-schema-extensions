@@ -1,6 +1,6 @@
 <?php
 /**
- * _Lhpbp\i18n\Component class
+ * WpmSchema\i18n\Component class
  *
  * @package wpmschema
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * _Lhpbp\Plugin class
+ * WpmSchema\Plugin class
  *
  * @package wpmschema
  */
@@ -131,6 +131,8 @@ class Plugin {
 		$components = array(
 			new i18n\Component(),
 			new SVG\Component(),
+			new UserSettings\Component(),
+			new Schema_Spouse\Component(),
 		);
 
 		return $components;
