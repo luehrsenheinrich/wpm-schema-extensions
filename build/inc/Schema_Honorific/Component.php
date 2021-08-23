@@ -69,11 +69,11 @@ class Component implements Component_Interface {
 	 */
 	public function update_user_profile( $user_id ) {
 		if ( isset( $_POST['wpm-honorific-prefix'] ) ) {
-			update_user_meta( $user_id, 'wpm-honorific-prefix', $_POST['wpm-honorific-prefix'] );
+			update_user_meta( $user_id, 'wpm-honorific-prefix', sanitize_text_field( $_POST['wpm-honorific-prefix'] ) );
 		}
 
 		if ( isset( $_POST['wpm-honorific-suffix'] ) ) {
-			update_user_meta( $user_id, 'wpm-honorific-suffix', $_POST['wpm-honorific-suffix'] );
+			update_user_meta( $user_id, 'wpm-honorific-suffix', sanitize_text_field( $_POST['wpm-honorific-suffix'] ) );
 		}
 	}
 
@@ -88,11 +88,11 @@ class Component implements Component_Interface {
 	 */
 	public function extend_schema_person_data( $data, $user_id ) {
 		if ( ! empty( get_user_meta( $user_id, 'wpm-honorific-prefix', true ) ) ) {
-			$data['honorificPrefix'] = get_user_meta( $user_id, 'wpm-honorific-prefix', true );
+			$data['honorificPrefix'] = esc_attr( get_user_meta( $user_id, 'wpm-honorific-prefix', true ) );
 		}
 
 		if ( ! empty( get_user_meta( $user_id, 'wpm-honorific-suffix', true ) ) ) {
-			$data['honorificSuffix'] = get_user_meta( $user_id, 'wpm-honorific-suffix', true );
+			$data['honorificSuffix'] = esc_attr( get_user_meta( $user_id, 'wpm-honorific-suffix', true ) );
 		}
 
 		return $data;
