@@ -70,7 +70,7 @@ class Component implements Component_Interface {
 	 * @return void
 	 */
 	public function update_user_profile( $user_id ) {
-		update_user_meta( $user_id, 'wpm-spouse', $_POST['wpm-spouse'] );
+		update_user_meta( $user_id, 'wpm-spouse', sanitize_text_field( $_POST['wpm-spouse'] ) );
 	}
 
 	/**
