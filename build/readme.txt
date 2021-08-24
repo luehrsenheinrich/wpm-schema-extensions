@@ -22,6 +22,9 @@ This is why this plugin exists. In this plugin we can add fun, useful and experi
 ### Spouse
 You can select another WordPress user in a user profile that is then marked as a [spouse](https://schema.org/spouse) of that user. Be advised, this connection is not bidirectional.
 
+### Honorific Titles
+You can set a honorific [prefix](https://schema.org/honorificPrefix) and [suffix](https://schema.org/honorificSuffix) for a specific user.
+
 ## Make this better
 
 If you are a developer, we encourage you to follow along or [contribute](https://github.com/luehrsenheinrich/wpm-schema-extensions) to the development of this plugin [on GitHub](https://github.com/luehrsenheinrich/wpm-schema-extensions).
@@ -49,6 +52,13 @@ I wrote this plugin, because I wanted to tell Google who my wife is. The 'spouse
 No. This plugin builds on the amazing code developed by the Yoast Team and is a deliberate extension to their efforts.
 
 == Changelog ==
+
 = 1.0.0 =
+- Public release on WordPress.org
+
+= 0.1.1 =
+- Escaping & Security
+
+= 0.1.0 =
 * Initial release
 * Added the spouse extension
