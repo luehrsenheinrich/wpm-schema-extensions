@@ -92,6 +92,10 @@ jobs:
         id: version
         run: echo "::set-output name=version::$(npm version ${{ github.event.inputs.version }} -m 'Tagging %s' -f)"
 
+      - name: ⚙️ Get project version
+        id: version
+        run: echo "::set-output name=version::$(node -p "require('./package.json').version")"
+
       - name: 🏗 Build Release
         run: npx grunt release
 
@@ -124,3 +128,13 @@ jobs:
           asset_path: ./update/${{ steps.package.outputs.slug }}.zip
           asset_name: ${{ steps.package.outputs.slug }}-${{ steps.version.outputs.version }}.zip
           asset_content_type: application/zip
+
+      - name: Deploy to WordPress.org
+        uses: luehrsenheinrich/action-wordpress-plugin-deploy@develop
+        env:
+          SVN_PASSWORD: ${{ secrets.WPM_SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.WPM_SVN_USERNAME }}
+          ASSETS_DIR: 'assets'
+          PLUGIN_DIR: 'trunk'
+          VERSION: ${{ steps.version.outputs.version }}
+          SLUG: 'wpm-schema'
