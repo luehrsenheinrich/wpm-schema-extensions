@@ -55,6 +55,7 @@ No. This plugin builds on the amazing code developed by the Yoast Team and is a 
 
 = 1.0.0 =
 - Public release on WordPress.org
+- Added the honorific title extension
 
 = 0.1.1 =
 - Escaping & Security
