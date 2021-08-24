@@ -89,8 +89,7 @@ jobs:
         run: git status
 
       - name: 🔼 Bump version
-        id: version
-        run: echo "::set-output name=version::$(npm version ${{ github.event.inputs.version }} -m 'Tagging %s' -f)"
+        run: npm version ${{ github.event.inputs.version }} -m 'Tagging %s' -f
 
       - name: ⚙️ Get project version
         id: version
