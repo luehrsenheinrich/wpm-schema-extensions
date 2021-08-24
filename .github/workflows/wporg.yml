@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   # This action is triggered automatically on release.
   release:
-    types: [released]
+    types: [published]
 
 jobs:
   main:
