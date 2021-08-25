@@ -55,7 +55,7 @@ No. This plugin builds on the amazing code developed by the Yoast Team and is a 
 
 = 1.1.0 =
 - Update the plugin name to signal, that this plugin is useless without Yoast SEO. (Thank you, Team Yoast!)
-- Fix an issue with the Spouse marup, where the wrong image would be attached to the spouse
+- Fix an issue with the Spouse markup, where the wrong image would be attached to the spouse
 
 = 1.0.0 =
 - Public release on WordPress.org
