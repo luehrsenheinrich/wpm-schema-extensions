@@ -91,6 +91,18 @@ class Spouse extends Person {
 	}
 
 	/**
+	 * Overwrite this function and make it straight return data, as spouses do not have images from options.
+	 *
+	 * @param array  $data      The Person schema.
+	 * @param string $schema_id The string used in the `@id` for the schema.
+	 *
+	 * @return array The Person schema.
+	 */
+	protected function set_image_from_options( $data, $schema_id ) {
+		return $data;
+	}
+
+	/**
 	 * We add the spouse data object to the user graph piece that has triggered
 	 * the generation of this spouse.
 	 *
